@@ -6,6 +6,7 @@
 const knowledgeBase=[
 
 {
+category:"Smart Lighting",
 
 keywords:[
 "smart lighting",
@@ -35,6 +36,7 @@ Kelebihan:
 },
 
 {
+category:"Lighting",
 
 keywords:[
 "led",
@@ -44,19 +46,8 @@ keywords:[
 title:"LED",
 
 answer:`
-
-LED (Light Emitting Diode)
-
-✔ Jimat tenaga
-
-✔ Jangka hayat panjang
-
-✔ Kurang haba
-
-✔ Sesuai digunakan dalam Smart Lighting.
-
+...
 `
-
 },
 
 {
@@ -98,6 +89,7 @@ Digunakan
 },
 
 {
+category:"Artificial Intelligence",
 
 keywords:[
 "ai",
@@ -360,6 +352,7 @@ untuk membantu AI membuat keputusan secara automatik.
 `
 },
 {
+category:"System Thinking",
 
 keywords:[
 "system thinking",
