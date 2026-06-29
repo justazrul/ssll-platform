@@ -45,3 +45,36 @@ opacity:.2;
 }
 
 }
+/* ============================
+AI CHAT MESSAGE
+============================ */
+
+.bubble{
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    max-width:75%;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+    white-space:pre-line;
+
+}
+
+.bot{
+
+    background:white;
+
+}
+
+.user{
+
+    background:#198754;
+
+    color:white;
+
+}
