@@ -1,13 +1,3 @@
-document.addEventListener("DOMContentLoaded",()=>{
-
-AOS.init({
-
-duration:1000,
-
-once:true
-
-});
-
-console.log("SSLL Platform Loaded Successfully");
-
-});
+console.log('SSLL Sprint 3 Loaded');
+console.log("Statistics Loaded");
+console.log("Statistics Ready");

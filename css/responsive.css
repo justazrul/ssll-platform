@@ -1,38 +1,40 @@
 @media(max-width:992px){
 
-.section-title{
-
-font-size:34px;
-
-}
-
-}
-
-@media(max-width:768px){
-
-section{
+.hero{
 
 padding:70px 0;
 
 }
 
-.section-title{
+.hero-title{
 
-font-size:28px;
-
-}
-
-}
-.hero h1{
-
-font-size:40px;
+font-size:38px;
 
 }
 
-.hero-icon{
+.hero-house{
 
-font-size:180px;
+font-size:120px;
 
 margin-top:40px;
+
+}
+
+}
+.stat-card{
+
+margin-bottom:20px;
+
+}
+.about-icon{
+
+font-size:100px;
+
+margin-top:30px;
+
+}
+.feature-card{
+
+margin-bottom:20px;
 
 }
