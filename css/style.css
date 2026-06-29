@@ -199,3 +199,321 @@ FEATURES
     line-height:1.8;
 
 }
+/* ===========================
+MODULES
+=========================== */
+
+.module-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    position:relative;
+
+    height:100%;
+
+}
+
+.module-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.module-number{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    background:#16A34A;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+}
+
+.module-icon{
+
+    font-size:70px;
+
+    color:#16A34A;
+
+    margin:25px 0;
+
+}
+
+.module-card h4{
+
+    font-weight:700;
+
+}
+
+.module-card h6{
+
+    color:#16A34A;
+
+    margin-bottom:20px;
+
+}
+
+.module-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+/* ===========================
+LEARNING JOURNEY
+=========================== */
+
+#journey{
+
+padding:100px 0;
+
+}
+
+.journey-step{
+
+text-align:center;
+
+}
+
+.journey-circle{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+border-radius:50%;
+
+background:white;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:32px;
+
+font-weight:700;
+
+color:#16A34A;
+
+transition:.3s;
+
+margin-bottom:20px;
+
+}
+
+.journey-circle:hover{
+
+transform:scale(1.1);
+
+background:#16A34A;
+
+color:white;
+
+}
+
+.journey-step h6{
+
+font-weight:600;
+
+}
+/* ===========================
+PROGRESS DASHBOARD
+=========================== */
+
+#progress{
+
+padding:100px 0;
+
+}
+
+.progress-dashboard{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.progress-item{
+
+margin-bottom:30px;
+
+}
+
+.progress-item span{
+
+display:block;
+
+font-weight:600;
+
+margin-bottom:10px;
+
+}
+
+.progress{
+
+height:12px;
+
+border-radius:20px;
+
+}
+/* ===========================
+SMART LIGHTING
+=========================== */
+
+.lighting-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    height:100%;
+
+}
+
+.lighting-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.lighting-icon{
+
+    font-size:70px;
+
+    color:#16A34A;
+
+    margin-bottom:20px;
+
+}
+
+.lighting-card h4{
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.lighting-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+/* ===========================
+AI TUTOR
+=========================== */
+
+.chat-demo{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.chat-user{
+
+background:#16A34A;
+
+color:white;
+
+padding:15px 20px;
+
+border-radius:15px;
+
+margin-bottom:20px;
+
+width:80%;
+
+margin-left:auto;
+
+}
+
+.chat-ai{
+
+background:#f3f4f6;
+
+padding:15px 20px;
+
+border-radius:15px;
+
+width:90%;
+
+}
+/* ===========================
+FOOTER
+=========================== */
+
+.footer{
+
+background:#0f172a;
+
+color:white;
+
+padding:60px 0;
+
+margin-top:80px;
+
+}
+
+.footer p{
+
+opacity:.8;
+
+margin-bottom:8px;
+
+}
