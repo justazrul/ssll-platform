@@ -1,0 +1,47 @@
+/* ======================================
+SSLL CARD
+====================================== */
+
+.ssll-card{
+
+background:white;
+
+border-radius:var(--radius);
+
+padding:30px;
+
+box-shadow:var(--shadow-sm);
+
+transition:var(--transition);
+
+border:none;
+
+}
+
+.ssll-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:var(--shadow-lg);
+
+}
+
+.ssll-card-title{
+
+font-size:22px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.ssll-card-icon{
+
+font-size:55px;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}

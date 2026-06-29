@@ -1,0 +1,77 @@
+/* ======================================
+SSLL BUTTONS
+====================================== */
+
+.ssll-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:12px 28px;
+
+background:var(--primary);
+
+color:var(--white);
+
+border:none;
+
+border-radius:var(--radius);
+
+font-weight:600;
+
+transition:var(--transition);
+
+cursor:pointer;
+
+text-decoration:none;
+
+}
+
+.ssll-btn:hover{
+
+background:var(--primary-dark);
+
+transform:translateY(-2px);
+
+box-shadow:var(--shadow-md);
+
+color:var(--white);
+
+}
+
+.ssll-btn-outline{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:12px 28px;
+
+background:transparent;
+
+border:2px solid var(--primary);
+
+color:var(--primary);
+
+border-radius:var(--radius);
+
+font-weight:600;
+
+transition:var(--transition);
+
+text-decoration:none;
+
+}
+
+.ssll-btn-outline:hover{
+
+background:var(--primary);
+
+color:white;
+
+}

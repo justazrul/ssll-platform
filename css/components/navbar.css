@@ -1,0 +1,33 @@
+/* ======================================
+NAVBAR
+====================================== */
+
+.ssll-navbar{
+
+background:white;
+
+box-shadow:var(--shadow-sm);
+
+}
+
+.ssll-navbar .navbar-brand{
+
+font-weight:700;
+
+color:var(--primary);
+
+}
+
+.ssll-navbar .nav-link{
+
+font-weight:500;
+
+transition:var(--transition);
+
+}
+
+.ssll-navbar .nav-link:hover{
+
+color:var(--primary);
+
+}

@@ -1,0 +1,51 @@
+:root{
+
+/* ===========================
+COLORS
+=========================== */
+
+--primary:#16A34A;
+
+--primary-dark:#15803D;
+
+--secondary:#0F172A;
+
+--accent:#22C55E;
+
+--warning:#F59E0B;
+
+--danger:#DC2626;
+
+--info:#0EA5E9;
+
+--light:#F8FAFC;
+
+--white:#FFFFFF;
+
+--gray:#64748B;
+
+--border:#E5E7EB;
+
+/* ===========================
+SHADOW
+=========================== */
+
+--shadow-sm:0 5px 15px rgba(0,0,0,.08);
+
+--shadow-md:0 10px 30px rgba(0,0,0,.10);
+
+--shadow-lg:0 20px 40px rgba(0,0,0,.12);
+
+/* ===========================
+RADIUS
+=========================== */
+
+--radius:20px;
+
+/* ===========================
+TRANSITION
+=========================== */
+
+--transition:.3s ease;
+
+}
