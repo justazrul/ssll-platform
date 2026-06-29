@@ -143,46 +143,7 @@ function scrollBottom(){
 chatArea.scrollTop=chatArea.scrollHeight;
 
 }
-// ===========================================
-// AI RESPONSE
-// ===========================================
 
-function getAnswer(question){
-
-question=question.toLowerCase();
-
-for(let key in knowledge){
-
-if(question.includes(key)){
-
-return knowledge[key];
-
-}
-
-}
-
-return `Maaf.
-
-Saya masih belum mempunyai jawapan khusus
-untuk soalan tersebut.
-
-Cuba gunakan kata kunci seperti
-
-• Smart Lighting
-
-• LED
-
-• kWh
-
-• AI
-
-• Sustainability
-
-• Electricity
-
-• System Thinking`;
-
-}
 // ===========================================
 // TYPING ANIMATION
 // ===========================================
@@ -252,7 +213,9 @@ function sendMessage(){
 
         removeTyping();
 
-        const answer=getAnswer(question);
+        const answer = getAnswer(question);
+
+        removeTyping();
 
         addBotMessage(answer);
 
