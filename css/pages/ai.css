@@ -1,12 +1,316 @@
+/* =====================================================
+SSLL AI TUTOR
+Version 1.1
+===================================================== */
+
+/* HERO */
+
+.ai-hero{
+
+padding:90px 0;
+
+background:linear-gradient(135deg,#f8fffb,#eefaf2);
+
+}
+
+.ai-robot{
+
+font-size:220px;
+
+color:#198754;
+
+animation:floatRobot 4s ease-in-out infinite;
+
+}
+
+@keyframes floatRobot{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0);}
+
+}
+
+/* SIDEBAR */
+
+.sidebar-card{
+
+position:sticky;
+
+top:90px;
+
+}
+
+.quick-btn{
+
+width:100%;
+
+padding:14px;
+
+margin-bottom:12px;
+
+background:white;
+
+border:none;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+cursor:pointer;
+
+transition:.3s;
+
+text-align:left;
+
+}
+
+.quick-btn:hover{
+
+background:#198754;
+
+color:white;
+
+transform:translateX(5px);
+
+}
+
+.topic-list div{
+
+padding:10px;
+
+margin-bottom:8px;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.topic-list div:hover{
+
+background:#eefaf2;
+
+}
+
+/* CHAT */
+
+.chat-card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.chat-header{
+
+padding:18px 25px;
+
+background:#198754;
+
+color:white;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.chat-area{
+
+height:550px;
+
+overflow-y:auto;
+
+padding:25px;
+
+background:#f7f9fb;
+
+}
+
+/* MESSAGE */
+
+.bot-message,
+.user-message{
+
+display:flex;
+
+margin-bottom:25px;
+
+align-items:flex-start;
+
+}
+
+.user-message{
+
+justify-content:flex-end;
+
+}
+
+.avatar{
+
+width:50px;
+
+height:50px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:#198754;
+
+color:white;
+
+font-size:22px;
+
+margin-right:15px;
+
+flex-shrink:0;
+
+}
+
+.user-message .avatar{
+
+margin-right:0;
+
+margin-left:15px;
+
+background:#2563eb;
+
+}
+
+.bubble{
+
+padding:18px 22px;
+
+border-radius:18px;
+
+max-width:75%;
+
+line-height:1.8;
+
+font-size:15px;
+
+white-space:pre-line;
+
+word-break:break-word;
+
+}
+
+.bot{
+
+background:white;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.user{
+
+background:#198754;
+
+color:white;
+
+}
+
+/* INPUT */
+
+.chat-input{
+
+padding:20px;
+
+background:white;
+
+border-top:1px solid #eee;
+
+}
+
+.chat-input input{
+
+height:58px;
+
+border-radius:12px;
+
+}
+
+.chat-input button{
+
+margin-left:10px;
+
+}
+
+/* FAQ */
+
+.faq-btn{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+border-radius:15px;
+
+background:white;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.faq-btn:hover{
+
+background:#198754;
+
+color:white;
+
+}
+
+/* TIP */
+
+.tip-item{
+
+display:flex;
+
+gap:15px;
+
+padding:15px 0;
+
+border-bottom:1px solid #eee;
+
+}
+
+.tip-item:last-child{
+
+border:none;
+
+}
+
+/* TYPING */
+
 .typing-dot{
 
 display:inline-block;
 
-font-size:22px;
-
 animation:typing 1.2s infinite;
 
-margin-right:3px;
+font-size:20px;
+
+margin-right:4px;
 
 }
 
@@ -24,11 +328,7 @@ animation-delay:.4s;
 
 @keyframes typing{
 
-0%{
-
-opacity:.2;
-
-}
+0%{opacity:.2;}
 
 50%{
 
@@ -45,36 +345,55 @@ opacity:.2;
 }
 
 }
-/* ============================
-AI CHAT MESSAGE
-============================ */
+
+/* SCROLLBAR */
+
+.chat-area::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+.chat-area::-webkit-scrollbar-thumb{
+
+background:#198754;
+
+border-radius:20px;
+
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+.sidebar-card{
+
+position:relative;
+
+top:0;
+
+margin-bottom:30px;
+
+}
+
+.ai-robot{
+
+font-size:120px;
+
+margin-top:40px;
+
+}
+
+.chat-area{
+
+height:420px;
+
+}
 
 .bubble{
 
-    padding:18px 22px;
-
-    border-radius:18px;
-
-    max-width:75%;
-
-    line-height:1.8;
-
-    font-size:15px;
-
-    white-space:pre-line;
+max-width:90%;
 
 }
-
-.bot{
-
-    background:white;
-
-}
-
-.user{
-
-    background:#198754;
-
-    color:white;
 
 }
