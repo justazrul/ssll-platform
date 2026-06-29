@@ -583,3 +583,130 @@ height:12px;
 border-radius:20px;
 
 }
+/* SMART LIGHTING */
+
+.lighting-lab,
+.lighting-info{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+#lampIcon{
+
+font-size:180px;
+
+transition:.3s;
+
+}
+
+.lamp-off{
+
+color:#bdbdbd;
+
+}
+
+.lamp-on{
+
+color:#FFD54F;
+
+text-shadow:0 0 40px #FFD54F;
+
+}
+/* ===========================
+SMART LIGHTING DASHBOARD
+=========================== */
+
+.table th{
+
+width:45%;
+
+}
+
+.alert{
+
+border-radius:15px;
+
+}
+
+.card{
+
+border-radius:20px;
+
+}
+
+.table{
+
+margin-bottom:0;
+
+}
+
+#savingValue{
+
+font-size:42px;
+
+font-weight:700;
+
+}
+/* ===================================
+MODULE CARDS
+=================================== */
+
+.module-card{
+
+border:0;
+
+border-radius:20px;
+
+transition:.3s;
+
+}
+
+.module-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.progress{
+
+height:12px;
+
+border-radius:20px;
+
+}
+
+.progress-bar{
+
+font-size:11px;
+
+font-weight:600;
+
+}
+/* ===========================
+CHECKLIST
+=========================== */
+
+.form-check{
+
+padding:12px;
+
+border-bottom:1px solid #ececec;
+
+}
+
+.list-group-item{
+
+padding:18px;
+
+font-size:16px;
+
+}
