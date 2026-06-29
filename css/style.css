@@ -517,3 +517,69 @@ opacity:.8;
 margin-bottom:8px;
 
 }
+/* ===========================
+MODULE DETAIL
+=========================== */
+
+.module-detail-card{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+height:100%;
+
+transition:.3s;
+
+}
+
+.module-detail-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.module-detail-card h3{
+
+margin-bottom:20px;
+
+font-weight:700;
+
+}
+
+.module-detail-card ul{
+
+padding-left:20px;
+
+line-height:2;
+
+margin:25px 0;
+
+}
+/* ===========================
+QUIZ
+=========================== */
+
+.quiz-card{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.progress{
+
+height:12px;
+
+border-radius:20px;
+
+}
