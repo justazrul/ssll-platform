@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const carbonValue = document.getElementById("carbonValue");
 
     let isOn = false;
+    let simulationCount = 0;
 
     function updateDashboard() {
 
@@ -50,6 +51,49 @@ document.getElementById("tableCost").textContent =
 
 document.getElementById("tableCarbon").textContent =
     carbon.toFixed(2) + " kg";
+/* ===========================
+AI RECOMMENDATION
+=========================== */
+
+const monthlySaving = cost * 30;
+
+document.getElementById("savingValue").textContent =
+    "RM" + monthlySaving.toFixed(2);
+
+let advice = "";
+
+if (Number(lampType.value) === 60) {
+
+    advice =
+        "⚠️ Incandescent menggunakan tenaga paling tinggi. Tukar kepada LED untuk penjimatan sehingga 80%.";
+
+}
+else if (Number(lampType.value) === 18) {
+
+    advice =
+        "💡 CFL lebih baik daripada Incandescent, tetapi LED masih pilihan paling cekap.";
+
+}
+else {
+
+    advice =
+        "✅ LED ialah pilihan terbaik untuk penjimatan tenaga dan pengurangan karbon.";
+
+}
+
+if (Number(slider.value) > 80) {
+
+    advice += "<br><br>🌙 Kurangkan kecerahan kepada sekitar 60–80% untuk penjimatan tambahan.";
+
+}
+
+if (Number(hours.value) > 10) {
+
+    advice += "<br><br>⏰ Tempoh penggunaan agak tinggi. Pertimbangkan penggunaan sensor automatik atau timer.";
+
+}
+
+document.getElementById("aiRecommendation").innerHTML = advice;    
     }
 
     function updateLamp() {
@@ -76,14 +120,19 @@ document.getElementById("tableCarbon").textContent =
         updateDashboard();
     }
 
-    button.addEventListener("click", () => {
+button.addEventListener("click", () => {
 
-        isOn = !isOn;
+    isOn = !isOn;
 
-        updateLamp();
+    updateLamp();
 
-    });
+    if (isOn) {
 
+        saveHistory();
+
+    }
+
+});
     slider.addEventListener("input", () => {
 
         if (isOn) {
@@ -101,5 +150,35 @@ document.getElementById("tableCarbon").textContent =
     hours.addEventListener("input", updateDashboard);
 
     updateLamp();
+function saveHistory() {
 
+    simulationCount++;
+
+    const table = document.getElementById("historyTable");
+
+    if (simulationCount === 1) {
+
+        table.innerHTML = "";
+
+    }
+
+    const brightness = Number(slider.value);
+    const watt = Number(lampType.value) * (brightness / 100);
+    const kwh = (watt * Number(hours.value)) / 1000;
+    const cost = kwh * 0.571;
+
+    const row = `
+        <tr>
+            <td>${simulationCount}</td>
+            <td>${lampType.options[lampType.selectedIndex].text}</td>
+            <td>${brightness}%</td>
+            <td>${hours.value}</td>
+            <td>${kwh.toFixed(2)}</td>
+            <td>RM${cost.toFixed(2)}</td>
+        </tr>
+    `;
+
+    table.insertAdjacentHTML("beforeend", row);
+
+}
 });
