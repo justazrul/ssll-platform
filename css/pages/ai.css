@@ -7,7 +7,7 @@ Version 1.1
 
 .ai-hero{
 
-padding:90px 0;
+padding:70px 0;
 
 background:linear-gradient(135deg,#f8fffb,#eefaf2);
 
@@ -103,7 +103,7 @@ border-radius:20px;
 
 overflow:hidden;
 
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+box-shadow:0 15px 35px rgba(0,0,0,.08);
 
 }
 
@@ -192,13 +192,13 @@ background:#2563eb;
 
 .bubble{
 
-padding:18px 22px;
+padding:18px;
 
 border-radius:18px;
 
 max-width:75%;
 
-line-height:1.8;
+line-height:1.7;
 
 font-size:15px;
 
@@ -395,5 +395,78 @@ height:420px;
 max-width:90%;
 
 }
+
+}
+.user-message{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin:15px 0;
+
+}
+
+.bot-message{
+
+    display:flex;
+
+    gap:15px;
+
+    margin:15px 0;
+
+}
+
+.avatar{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:20px;
+
+}
+
+.bubble{
+
+    max-width:75%;
+
+    padding:15px;
+
+    border-radius:16px;
+
+}
+
+.bubble.user{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+.bubble.bot{
+
+    background:#ffffff;
+
+    border:1px solid #e8e8e8;
+
+}
+
+#chatArea{
+
+    scroll-behavior:smooth;
 
 }
