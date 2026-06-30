@@ -1,0 +1,27 @@
+#ssll-loader{
+
+    position:fixed;
+    inset:0;
+
+    background:#ffffff;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:99999;
+
+}
+
+#ssll-loader.show{
+
+    opacity:1;
+    visibility:visible;
+
+}
